@@ -24,14 +24,12 @@
     }];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - 懒加载
-- (UIImageView *)cropImageview
-{
+- (UIImageView *)cropImageview {
     if (!_cropImageview) {
         _cropImageview = [[UIImageView alloc] init];
         _cropImageview.contentMode = UIViewContentModeScaleAspectFill;

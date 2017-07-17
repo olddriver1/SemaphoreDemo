@@ -9,8 +9,7 @@
 #import "GHNetworkTools.h"
 
 @implementation GHNetworkTools
-+ (instancetype)sharedTools
-{
++ (instancetype)sharedTools {
     static dispatch_once_t onceToken;
     static GHNetworkTools *instabce;
     dispatch_once(&onceToken, ^{
@@ -22,8 +21,7 @@
     return instabce;
 }
 
-- (void)request:(GHHttpMethod)method urlString:(NSString *)urlString parameters:(id)parameters completion:(void (^)(id, NSError *))completion
-{
+- (void)request:(GHHttpMethod)method urlString:(NSString *)urlString parameters:(id)parameters completion:(void (^)(id, NSError *))completion {
     // 请求成功的block
     void(^successBlock)(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) = ^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 请求成功
@@ -37,8 +35,7 @@
     if (method == GHHttpMethodGet) {
         //GET
         [self GET:urlString parameters:parameters progress:nil success:successBlock failure:failureBlock];
-    }else
-    {
+    }else {
         //POST
         [self POST:urlString parameters:parameters progress:nil success:successBlock failure:failureBlock];
     }

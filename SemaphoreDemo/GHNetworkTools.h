@@ -16,8 +16,8 @@ typedef NS_ENUM(NSUInteger, GHHttpMethod) {
 @interface GHNetworkTools : AFHTTPSessionManager
 
 // 单例
-+(instancetype)sharedTools;
++ (instancetype)sharedTools;
 // 请求网络方法
--(void)request:(GHHttpMethod)method urlString:(NSString *)urlString parameters:(id)parameters completion:(void(^)(id response, NSError *error))completion;
+- (void)request:(GHHttpMethod)method urlString:(NSString *)urlString parameters:(id)parameters completion:(void(^)(id response, NSError *error))completion;
 
 @end

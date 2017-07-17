@@ -23,12 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupUI];
+    [self setupBtn];
 }
 
-#pragma mark - 初始化UI
-- (void)setupUI
-{
+#pragma mark - 初始化按钮
+- (void)setupBtn {
     UIButton *btn = [[UIButton alloc] init];
     [btn setTitle:@"打开相册" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -42,8 +41,7 @@
 }
 
 #pragma mark - 监听事件 
-- (void)btnBntClike
-{
+- (void)btnBntClike {
     [BDImagePicker showImagePickerFromViewController:self allowsEditing:YES finishAction:^(UIImage *image) {
         TOCropViewController *cropController = [[TOCropViewController alloc] initWithImage:image];
         cropController.delegate = self;
@@ -52,8 +50,7 @@
 }
 
 #pragma mark - UIImagePickerControllerDelegate
-- (void)cropViewController:(TOCropViewController *)cropViewController didCropToImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle
-{
+- (void)cropViewController:(TOCropViewController *)cropViewController didCropToImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle {
     self.cropImageview.image = image;
     CGRect viewFrame = [self.view convertRect:self.cropImageview.frame toView:self.navigationController.view];
     NSData *data = UIImageJPEGRepresentation(self.cropImageview.image,0.1);
@@ -111,8 +108,7 @@
 }
 
 #pragma mark - 懒加载
-- (UIImageView *)cropImageview
-{
+- (UIImageView *)cropImageview {
     if (!_cropImageview) {
         _cropImageview = [[UIImageView alloc] init];
     }
