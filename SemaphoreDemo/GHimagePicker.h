@@ -1,23 +1,21 @@
 //
-//  AppDelegate.h
-//  SemaphoreDemo
+//  GHimagePicker.h
+//  GHimagePicker
 //
-//  Created by 郭杭 on 16/11/15.
+//  Created by 郭杭 on 17/4/27.
 //  Copyright © 2017年 郭杭. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-typedef void (^BDImagePickerFinishAction)(UIImage *image);
+typedef void (^GHImagePickerFinishAction)(UIImage *image);
 
-@interface BDImagePicker : NSObject
-
+@interface GHimagePicker : NSObject
 /**
  @param viewController  用于present UIImagePickerController对象
  @param allowsEditing   是否允许用户编辑图像
  */
 + (void)showImagePickerFromViewController:(UIViewController *)viewController
                             allowsEditing:(BOOL)allowsEditing
-                             finishAction:(BDImagePickerFinishAction)finishAction;
-
+                             finishAction:(GHImagePickerFinishAction)finishAction;
 @end

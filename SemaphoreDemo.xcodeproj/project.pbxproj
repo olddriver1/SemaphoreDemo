@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40828ED1F1F636200BA4B7D /* GHimagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A40828EC1F1F636200BA4B7D /* GHimagePicker.m */; };
 		A4FF06B11E6682DD0048F7A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF06B01E6682DD0048F7A4 /* main.m */; };
 		A4FF06B41E6682DD0048F7A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF06B31E6682DD0048F7A4 /* AppDelegate.m */; };
 		A4FF06B71E6682DD0048F7A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF06B61E6682DD0048F7A4 /* ViewController.m */; };
@@ -46,7 +47,6 @@
 		A4FF07381E66A2700048F7A4 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF07271E66A2700048F7A4 /* TOCropViewControllerTransitioning.m */; };
 		A4FF07391E66A2700048F7A4 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF07291E66A2700048F7A4 /* UIImage+CropRotate.m */; };
 		A4FF073A1E66A2700048F7A4 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF072B1E66A2700048F7A4 /* UIImage+FixOrientation.m */; };
-		A4FF073E1E66A4990048F7A4 /* BDImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF073D1E66A4990048F7A4 /* BDImagePicker.m */; };
 		A4FF07411E66B0820048F7A4 /* PushToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF07401E66B0820048F7A4 /* PushToViewController.m */; };
 		A4FF07521E66B3E50048F7A4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF074A1E66B3E50048F7A4 /* SVIndefiniteAnimatedView.m */; };
 		A4FF07531E66B3E50048F7A4 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FF074C1E66B3E50048F7A4 /* SVProgressAnimatedView.m */; };
@@ -66,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40828EB1F1F636200BA4B7D /* GHimagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHimagePicker.h; sourceTree = "<group>"; };
+		A40828EC1F1F636200BA4B7D /* GHimagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHimagePicker.m; sourceTree = "<group>"; };
 		A4FF06AC1E6682DD0048F7A4 /* SemaphoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SemaphoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FF06B01E6682DD0048F7A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4FF06B21E6682DD0048F7A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,8 +149,6 @@
 		A4FF07291E66A2700048F7A4 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropRotate.m"; sourceTree = "<group>"; };
 		A4FF072A1E66A2700048F7A4 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
 		A4FF072B1E66A2700048F7A4 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
-		A4FF073C1E66A4990048F7A4 /* BDImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDImagePicker.h; sourceTree = "<group>"; };
-		A4FF073D1E66A4990048F7A4 /* BDImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDImagePicker.m; sourceTree = "<group>"; };
 		A4FF073F1E66B0820048F7A4 /* PushToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushToViewController.h; path = ../PushToViewController.h; sourceTree = "<group>"; };
 		A4FF07401E66B0820048F7A4 /* PushToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushToViewController.m; path = ../PushToViewController.m; sourceTree = "<group>"; };
 		A4FF07491E66B3E50048F7A4 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
@@ -202,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				A4FF07481E66B3E50048F7A4 /* SVProgressHUD */,
-				A4FF073B1E66A4990048F7A4 /* BDImagePicker */,
 				A4FF070F1E66A2700048F7A4 /* SKFCamera */,
 				A4FF06EB1E6685610048F7A4 /* Masonry */,
 				A4FF06D41E66834F0048F7A4 /* AFNetworking */,
@@ -214,6 +213,8 @@
 				A4FF07401E66B0820048F7A4 /* PushToViewController.m */,
 				A4FF06E81E6683A30048F7A4 /* GHNetworkTools.h */,
 				A4FF06E91E6683A30048F7A4 /* GHNetworkTools.m */,
+				A40828EB1F1F636200BA4B7D /* GHimagePicker.h */,
+				A40828EC1F1F636200BA4B7D /* GHimagePicker.m */,
 				A4FF06B81E6682DD0048F7A4 /* Main.storyboard */,
 				A4FF06BB1E6682DD0048F7A4 /* Assets.xcassets */,
 				A4FF06BD1E6682DD0048F7A4 /* LaunchScreen.storyboard */,
@@ -325,15 +326,6 @@
 				A4FF072B1E66A2700048F7A4 /* UIImage+FixOrientation.m */,
 			);
 			path = SKFCamera;
-			sourceTree = "<group>";
-		};
-		A4FF073B1E66A4990048F7A4 /* BDImagePicker */ = {
-			isa = PBXGroup;
-			children = (
-				A4FF073C1E66A4990048F7A4 /* BDImagePicker.h */,
-				A4FF073D1E66A4990048F7A4 /* BDImagePicker.m */,
-			);
-			path = BDImagePicker;
 			sourceTree = "<group>";
 		};
 		A4FF07481E66B3E50048F7A4 /* SVProgressHUD */ = {
@@ -458,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FF070D1E6685610048F7A4 /* View+MASAdditions.m in Sources */,
+				A40828ED1F1F636200BA4B7D /* GHimagePicker.m in Sources */,
 				A4FF06E71E66834F0048F7A4 /* AFURLSessionManager.m in Sources */,
 				A4FF06B71E6682DD0048F7A4 /* ViewController.m in Sources */,
 				A4FF07311E66A2700048F7A4 /* TOCropOverlayView.m in Sources */,
@@ -490,7 +483,6 @@
 				A4FF07321E66A2700048F7A4 /* TOCroppedImageAttributes.m in Sources */,
 				A4FF07351E66A2700048F7A4 /* TOCropView.m in Sources */,
 				A4FF06E61E66834F0048F7A4 /* AFURLResponseSerialization.m in Sources */,
-				A4FF073E1E66A4990048F7A4 /* BDImagePicker.m in Sources */,
 				A4FF06E21E66834F0048F7A4 /* AFHTTPSessionManager.m in Sources */,
 				A4FF06EA1E6683A30048F7A4 /* GHNetworkTools.m in Sources */,
 				A4FF07391E66A2700048F7A4 /* UIImage+CropRotate.m in Sources */,
@@ -692,6 +684,7 @@
 				A4FF06D01E6682DD0048F7A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4FF06D11E6682DD0048F7A4 /* Build configuration list for PBXNativeTarget "SemaphoreDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -700,6 +693,7 @@
 				A4FF06D31E6682DD0048F7A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

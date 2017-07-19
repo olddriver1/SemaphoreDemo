@@ -11,7 +11,7 @@
 #import "SVProgressHUD.h"
 #import "GHNetworkTools.h"
 #import "SKFCamera.h"
-#import "BDImagePicker.h"
+#import "GHimagePicker.h"
 #import "TOCropViewController.h"
 #import "PushToViewController.h"
 
@@ -42,7 +42,7 @@
 
 #pragma mark - 监听事件 
 - (void)btnBntClike {
-    [BDImagePicker showImagePickerFromViewController:self allowsEditing:YES finishAction:^(UIImage *image) {
+    [GHimagePicker showImagePickerFromViewController:self allowsEditing:YES finishAction:^(UIImage *image) {
         TOCropViewController *cropController = [[TOCropViewController alloc] initWithImage:image];
         cropController.delegate = self;
         [self presentViewController:cropController animated:YES completion:nil];
